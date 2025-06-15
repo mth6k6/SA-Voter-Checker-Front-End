@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import InputForm from "./components/InputForm";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" style={{
+        height: '100vh',
+        margin: 0,
+        padding: 0,
+        backgroundImage: 'url("/images/SA-Flag-background.jpg")', 
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+      >
+     <InputForm/>
     </div>
   );
 }
