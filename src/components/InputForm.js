@@ -13,7 +13,7 @@ const [Name, setName] = useState('');
     e.preventDefault();
     try {
     const res = await axios.post(
-      'https://savoterchecker.runasp.net/api/voter/check', //this is the url for my server app
+      'https://savoterchecker.runasp.net/api/voterchecker', //this is the url for my server app
       { Name, Surname, IdNum }
     );
     
